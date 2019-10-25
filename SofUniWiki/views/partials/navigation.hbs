@@ -1,0 +1,11 @@
+<nav>
+    <a href="/">Main Page</a>
+    <a href="/article/all">All Articles</a>
+    <form method="POST" action="/">
+        <input type="text" name="search" value="{{search}}">
+        <input type="submit" value="Search">
+    </form>
+    {{#if isLoggedIn}}
+        <a href="/article/create">Create New Article</a>
+    {{/if}}
+</nav>

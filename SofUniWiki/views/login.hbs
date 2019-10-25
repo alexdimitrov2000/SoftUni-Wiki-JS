@@ -1,0 +1,17 @@
+{{#each errors}}
+  <section id="notifications">
+    <p>{{this}}</p>
+  </section>
+{{/each}}
+<section>
+  <h2>Login</h2>
+  <div class="spacer">
+    <form method="POST" action="/user/login">
+      <label>Username:</label>
+      <input type="text" name="username">
+      <label>Password:</label>
+      <input name="password" type="password">
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</section>
